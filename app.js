@@ -17,8 +17,17 @@ const app = () => {
     //Duration
     let fakeDuration = 600;
 
-    outline.style.strokeDasharray = 100;
-}
+    outline.style.strokeDasharray = outlineLength;
+    outline.style.strokeDashoffset = outlineLength;
+
+//play sound
+    play.addEventListener('click', ()=>{
+
+        song.play();
+
+    });
+
+};
 
 
 app();
