@@ -5,6 +5,12 @@
 
 }
 
+
+
+.play{
+    position: absolute;
+    }
+
 .replay {
     position: absolute;
     height: 30px;
