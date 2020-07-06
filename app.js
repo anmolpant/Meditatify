@@ -63,6 +63,15 @@ const app = () => {
 
         //animate text
         timeDisplay.textContent = `${minutes}:${seconds}`;
+    
+
+        if(currentTime >= fakeDuration){
+            song.pause();
+            song.currentTime = 0;
+            play.src = './svg/play.svg';
+            video.pause();
+
+        }
     };
 
 };
